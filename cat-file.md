@@ -3,9 +3,9 @@
 version:git v1.8.4
 
 ## デバグ方法
-EmacsでM-x gdb
-break parse_sha1_header
-run cat-file -p badcafe
+* EmacsでM-x gdb
+* break parse_sha1_header
+* run cat-file -p badcafe
 
 ## 処理シーケンス
 * sha1オブジェクトファイルのヘッダを解析してオブジェクトタイプを決定
@@ -24,5 +24,3 @@ run cat-file -p badcafe
 #8  0x0000000000404e22 in run_argv (argc=3, av=<value optimized out>) at git.c:512
 #9  main (argc=3, av=<value optimized out>) at git.c:595
 ```
-
-
