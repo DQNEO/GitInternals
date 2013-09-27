@@ -8,6 +8,14 @@
 
 blob + " " + size + "\0" + binary_content
 
+## treeオブジェクトの構造
+
+treeオブジェクトは中身の一部がバイナリフォーマットなので、zlib解凍してcatすると画面表示が崩れる。
+
+具体的には、エントリのsha1がバイナリの16進数である。
+
+see http://getpocket.com/a/read/288689326
+
 
 例
 ```
