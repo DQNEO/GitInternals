@@ -2,6 +2,7 @@
 
 source: https://github.com/git/git/blob/v1.8.4/git.c#L312
 
+```
 add
 annotate
 apply
@@ -116,3 +117,4 @@ verify-tag
 version
 whatchanged
 write-tree
+```
