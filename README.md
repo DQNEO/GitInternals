@@ -25,3 +25,8 @@
 * コミットを特定する方法にはどんなものがありますか？
 * Gitの本質を一言で言うと何でしょう？
 * ブランチの正体（実体）は何だと思いますか？
+
+## お役立ちコマンド集
+* git cat-file -p
+* git cat-file -p HEAD^{tree}
+* git ls-files --stage
