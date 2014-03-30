@@ -11,6 +11,18 @@ $ git clone git://github.com/DQNEO/minigit.git
 $ cd minigit
 $ git checkout
 ```
+
+`git ls-files --stage`で中身を表示できる
+```
+$ git ls-files --stage | head
+100644 95ba71b8e7c2d70965d9a5086a9fabd58e87d259 0       .gitignore
+100644 960a0c393e5e493e911ac24ac42d6eb125409263 0       Makefile
+100644 9d7f6b8213c452a8e698ccb5557cdf5d36ccf25c 0       README.md
+100644 0392373249530f848adca4413ed159a6cde3887e 0       c_samples/is_substr.c
+100644 b439e0a12503c7744ed2fb8da7dd3bf1a541acae 0       c_samples/parse_git_index.c
+```
+
+`hexdump -C`で生のバイナリデータを見れる
 ```shell
 $ hexdump -C .git/index  | head
 00000000  44 49 52 43 00 00 00 02  00 00 00 29 53 32 25 dd  |DIRC.......)S2%.|
