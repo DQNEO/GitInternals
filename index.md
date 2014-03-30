@@ -1,4 +1,14 @@
-# .git/indexの構造
+# .git/index
+
+## 豆知識
+.git/indexは、削除しても簡単に作り直せる
+
+```shell
+rm .git/index
+git reset
+```
+
+## ファイルの構造
 
 
 ```shell
