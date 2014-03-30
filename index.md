@@ -1,10 +1,8 @@
-# .git/index
+# .git/indexの解説
 
-http://www8.atwiki.jp/git_jp/pub/Documentation.ja/user-manual.html#the-index
-
-## 豆知識
-.git/indexは、削除しても簡単に作り直せる
-
+* ./git/indexは、"ステージング/インデックス"情報を保持してるバイナリファイルである。
+* 中身を表示するには`git ls-files --stage`
+* まれに壊れることがあるが、簡単に作り直せる
 ```shell
 rm .git/index
 git reset
@@ -58,6 +56,5 @@ $ hexdump -C .git/index  | head
 
 # 参考
 * https://github.com/git/git/blob/master/Documentation/technical/index-format.txt
-* ["git indexの中身 - 西尾泰和のはてなダイアリー"](http://d.hatena.ne.jp/nishiohirokazu/20120523/1337766796
-) ←一部、正しくない気がする。
+* http://www8.atwiki.jp/git_jp/pub/Documentation.ja/user-manual.html#the-index
 
