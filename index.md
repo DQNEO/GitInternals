@@ -1,5 +1,7 @@
 # .git/index
 
+http://www8.atwiki.jp/git_jp/pub/Documentation.ja/user-manual.html#the-index
+
 ## 豆知識
 .git/indexは、削除しても簡単に作り直せる
 
