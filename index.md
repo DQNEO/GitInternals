@@ -2,11 +2,6 @@
 
 * .git/indexは、"ステージング/インデックス"情報を保持してるバイナリファイルである。
 * 中身を表示するには`git ls-files --stage`
-* まれに壊れることがあるが、簡単に作り直せる
-```shell
-rm .git/index
-git reset
-```
 
 ## ファイルの構造
 
@@ -59,6 +54,13 @@ $ hexdump -C .git/index  | head
 // ここからファイル"Makefile"の情報
 53 32 25 dd // ctime sec
 以下、同じように続く
+```
+
+## 壊れたときの対処法
+ まれに壊れることがあるが、簡単に作り直せる
+```shell
+rm .git/index
+git reset
 ```
 
 # 参考
