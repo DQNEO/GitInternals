@@ -29,15 +29,13 @@ $ hexdump -C .git/index  | head
 00000080  00 00 00 b5 96 0a 0c 39  3e 5e 49 3e 91 1a c2 4a  |.......9>^I>...J|
 00000090  c4 2d 6e b1 25 40 92 63  00 08 4d 61 6b 65 66 69  |.-n.%@.c..Makefi|```
 
-ヘッダー
 ```
+// ヘッダー
 44 49 52 43 // シグネチャ("DIRC")
 00 00 00 02 // ヘッダのバージョン (2)
 00 00 00 29 // エントリ数 0x29 (41個)
-```
-各エントリ
-```
--- ファイル".gitignore"の情報
+// ここから各エントリ
+// ここからファイル".gitignore"の情報
 53 32 25 dd // ctime sec
 1c 22 62 97 // ctime nano sec
 53 32 25 dd // m_time sec
@@ -52,7 +50,7 @@ $ hexdump -C .git/index  | head
 00 0a       // namelen (".gitignore"は10文字)
 2e 67 69 74 69 67 6e 6f 72 65 // ".gitignore"
 00 00 00 00  00 00 00 00 // zero padding
--- ファイル"Makefile"の情報
+// ここからファイル"Makefile"の情報
 53 32 25 dd // ctime sec
 以下、同じように続く
 ```
