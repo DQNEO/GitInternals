@@ -11,6 +11,12 @@ $ hexdump -C .git/index  |head
  00000050  6e 74 65 72 70 72 69 73  65 00 00 00 53 37 c4 47  |nterprise...S7.G|
 ```
 
+```
+44 49 52 43 // DIRC
+00 00 00 02 // hdr_version
+00 00 00 c9 //
+```
+
 # 参考
 * https://github.com/gitster/git/blob/master/Documentation/technical/index-format.txt
 * ["git indexの中身 - 西尾泰和のはてなダイアリー"](http://d.hatena.ne.jp/nishiohirokazu/20120523/1337766796
